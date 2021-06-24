@@ -1,0 +1,25 @@
+.sentence-anim{
+    animation: typewriter 1s steps(50) 1s 2 alternate both,
+      blink .6s linear 2 alternate; 
+  }
+  
+  @keyframes typewriter {
+    0% {width: 0;}
+    50% {width: 8.5em;}
+    100% {width: 8.5em;}
+  }
+  
+  
+  @keyframes blink {
+      0% { border-right: 4px solid white;}
+      40% {border-right: 4px solid white;}
+      60% {border-right: none;}
+      100% {border-right: none;}
+    }
+
+
+     
+ .hidden{
+    opacity:0;
+  }
+  

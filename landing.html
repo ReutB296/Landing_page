@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styls.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <title>Welcome to my page</title>
+</head>
+<body>
+    <nav class="navbar" >
+        <div class= "navContainer nav-notActive">
+            <ul class="ulNav text-white">
+                <li>
+                    <a class="top home" href="#home">Home</a>
+                </li>
+                <li>
+                    <a class="top work">work</a>
+                </li>
+                <li>
+                    <a class="top about" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="top contact" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="background" id="home">
+    <main>
+        <div class="wraper">
+        <div class='container'>
+            <span class="sentence hidden">I'm a Developer.</span>
+            <span class="sentence hidden">I'm Creative.</span>
+            <span class="sentence hidden">I love to code.</span>
+          </div>
+        <!-- 
+      Hi! my name is <b>Reut Katz</b> and I'm a fullstack developer.<br>
+            In this website you can find my protfolio and get impressed by my work.<br>
+            <!-- Hope you'll enjoy exploring this website!
+            please feel free to contact me for any inquiries. -->
+        <!-- </p> --> 
+                <a href="#work">View Work</a>
+                <a href="#contact">Hire Me</a>
+         </div>
+        </main> 
+    </div>
+
+    <section id="about">
+        <h1>WHO <span>AM I?</span></h1>
+        <article>
+            <div class="picture">        
+                <img src="./pic/1517443495443.jpg" title= "pasport_pic" data-aos="fade-up">
+            </div>
+            <div class="info">
+                <h2>Reut Katz</h2>
+                <p> Hi! welcome to my website.
+                    I am a Full stack Developer, Industrial and Management Engineer 
+                    Hope you'll enjoy exploring this website!
+                    please feel free to contact me for any inquiries.
+                </p> 
+                <aside class="links">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/reut-b-katz/" target="_blank"><img class="linkdin" title= "linkdin" src="./pic/79742.png"></a></li>
+                        <li><a href="https://github.com/ReutB296" target="_blank"><img class="github" title= "github" src="./pic/github.png"></a></li>
+                        <li><a href="mailto:reut.b.katz@gmail.com" target="_blank"><img class="email" title= "email" src="./pic/small-email-icon-29.jpg"></a></li>
+                    </ul>
+                </aside>
+            </div>
+            </article>
+    </section>
+    <section id="contact">
+        <div class="containerContact">
+            <h2 class=contactH2>GET IN <span>TOUCH</span></h2>
+            <form class="ContactForm">
+                <input class="name" type="text" name="name" placeholder="Your Name" required>
+                <input class="emailAdress" type="email" name="email" placeholder="Your Email" required>
+                <input class="subject" type="text" name="subject"  placeholder="Subject" required>
+                <textarea class="message" name="message"  placeholder="Message" required></textarea>
+                <button type="submit" class="ContactButton">Submit Now</button>
+            </form>
+        </div>
+
+    </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>   
+        <script src="./js/JS.js"></script>   
+        <script src="./js/navbar.js"></script> 
+</body>
+</html>

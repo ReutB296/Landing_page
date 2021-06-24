@@ -1,0 +1,87 @@
+.background{
+    height: 100vh;
+    width: 100%;
+    background-color: $background;
+    opacity: 0.9;
+}
+
+main{
+    background-image: url(../pic/Untitled-1.jpg);
+    background-size: cover;
+    background-position:50% 50%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+ 
+    .wraper{ 
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 160px;
+        justify-content: center;
+        margin-top:170px;
+       
+        .container{
+            width:100%;
+            height:100%;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            position:relative;
+            color: white;
+        }
+        
+        a{
+        display: inline-block;
+        color:black;
+        font-size: 15px;
+        border: 2px solid $pageColor;
+        text-align: center;
+        vertical-align: middle;
+        margin-right:20px;
+        padding:8px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        letter-spacing: 3px;
+        user-select: none;
+        font-weight: 600;
+        background: $pageColor;
+        transition: all 500ms ease;
+       
+
+        
+            &:hover{
+                background: none;
+                color:white;
+            }
+        }
+    } 
+}
+
+
+  
+.sentence{
+    display:inline-block;
+    overflow: hidden;
+    position:absolute; 
+    width: 8.5em;
+    border-right: 4px solid white;
+    font-size: 75px;
+    white-space: nowrap;
+    font-weight: bold; 
+   
+ } 
+ 
+
+
+
+
