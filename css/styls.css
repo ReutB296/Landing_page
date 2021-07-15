@@ -1,3 +1,8 @@
+html{
+  margin:0;
+  padding:0;
+}
+
 .navbar {
   position: fixed;
   top: 0px;
@@ -167,7 +172,7 @@ main .wraper a {
   vertical-align: middle;
   margin-right: 20px;
   padding: 8px 30px;
-  border-radius: 5px;
+  border-radius: 3px;
   cursor: pointer;
   letter-spacing: 3px;
   user-select: none;
@@ -192,16 +197,16 @@ main .wraper a:hover {
 }
 
 #about {
+  width: 100%;
   background-color: #f5f5f5;
   height: 70vh;
   padding: 120px 0;
-  display: grid;
-  grid-template-columns: auto 960px auto;
-  grid-template-rows: auto 566px auto;
-  grid-template-areas: "gap headlin gapr" "gap article gapr" "gap space   gapr";
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 #about h1 {
-  grid-area: headlin;
   font-size: 32px;
   letter-spacing: 1px;
   font-weight: 700;
@@ -212,8 +217,8 @@ main .wraper a:hover {
   color: #f38f67;
 }
 #about article {
-  grid-area: article;
   display: flex;
+  justify-content: center;
   gap: 150px;
   margin-top: 80px;
 }
@@ -233,6 +238,7 @@ main .wraper a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 30%;
 }
 .info h2 {
   color: #f38f67;
@@ -259,20 +265,32 @@ main .wraper a:hover {
   width: 40px;
 }
 
+.message, .subject, .emailAdress, .name {
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-size: 12px;
+  padding-left: 10px;
+}
+.message:focus, .subject:focus, .emailAdress:focus, .name:focus, .message:active, .subject:active, .emailAdress:active, .name:active {
+  border: 1px solid #f38f67;
+  outline: 0 none;
+}
+
 #contact {
+  width: 100%;
   height: 60vh;
 }
 
 .containerContact {
   width: 780px;
   height: 300px;
-  margin: 130px auto;
+  margin: 60px auto;
 }
 .containerContact .contactH2 {
   margin-left: 250px;
+  margin-bottom: 80px;
   font-size: 32px;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 600;
 }
 .containerContact .contactH2 span {
   color: #f38f67;
@@ -283,22 +301,52 @@ main .wraper a:hover {
   grid-template-columns: repeat(2, 325px);
   grid-template-rows: repeat(4, 704);
   column-gap: 25px;
-  row-gap: 25px;
+  row-gap: 35px;
 }
 
-.name, .message {
+.name {
   grid-column: 1/3;
+  height: 38px;
+}
+
+.emailAdress {
+  height: 38px;
+}
+
+.subject {
+  height: 38px;
+}
+
+.message {
+  grid-column: 1/3;
+  height: 182px;
+  padding-top: 10px;
 }
 
 .ContactButton {
   width: 170px;
   height: 40px;
+  color: white;
+  font-size: 15px;
+  border: 2px solid #f38f67;
+  border-radius: 3px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  user-select: none;
+  font-weight: 600;
+  background: #f38f67;
+  transition: all 500ms ease;
+}
+.ContactButton:hover {
+  background: none;
+  color: black;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  width: 100%;
-  margin: 0;
+  margin:0;
+  padding:0;
+  min-width: fit-content;
 }
 
 ul li {
@@ -309,4 +357,61 @@ a {
   text-decoration: none;
 }
 
-/*# sourceMappingURL=styls.css.map */
+@media (max-width: 768px) {
+  .ContactForm {
+    display: grid;
+    grid-template-columns: repeat(2, 225px);
+  }
+}
+
+
+@media (max-width: 480px) {
+  .navContainer ul{
+    flex-direction: column;
+  }
+
+  .containerContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    width: inherit;
+    margin-top: 120px;
+  }
+  .containerContact .contactH2{
+    margin:0;
+  }
+ .ContactForm{
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 15px;
+ }
+
+ #contact{
+   width: 100vw;
+ }
+
+ #about{
+   height: 100vh;
+ }
+ #about article{
+   flex-direction: column;
+   align-items: center;
+   gap:0;
+   margin: 0;
+ }
+ #about article .info{
+   width: 70%;
+ }
+
+ #about article img{
+   max-width: 90vw;
+ }
+
+ #about h1{
+   margin: 0;
+ }
+}
