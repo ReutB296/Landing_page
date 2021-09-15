@@ -1,6 +1,7 @@
 html{
   margin:0;
   padding:0;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
@@ -343,7 +344,7 @@ main .wraper a:hover {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  -family: "Open Sans", sans-serif;
   margin:0;
   padding:0;
   min-width: fit-content;
@@ -413,5 +414,12 @@ a {
 
  #about h1{
    margin: 0;
+ }
+
+ .background main{
+   background-size: contain;
+ }
+ .background main .container span{
+   font-size: 45px;
  }
 }
