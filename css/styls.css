@@ -497,6 +497,12 @@ padding: 20px;
 }
 #contact .containerContact .ContactForm {
   padding: 0;
+  row-gap: none;
+}
+
+#contact .containerContact .ContactForm input, #contact .containerContact .ContactForm textarea{
+  margin-bottom: 20px;
+
 }
 
 main .wraper .container .sentence{
