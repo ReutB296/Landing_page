@@ -64,7 +64,33 @@
         }
 
         p{
-        font-size: 15px;
+        font-size: 18px;
+        width: 510px;
+        margin:0;
+        }
+
+        .skills-list{
+            display: grid;
+            grid-template-columns: repeat(2, minmax(140px, 200px));
+            padding: 10px;
+            list-style: none;
+          
+            li{
+                position: relative;
+                padding-left: 15px;
+                margin-bottom: 5px;
+            }
+
+            li::before{
+                content: "▹";
+                position: absolute;
+                left: 0px;
+                color:$pageColor;
+                font-size: 20px;
+                font-weight: bolder;
+                line-height: 20px;
+              
+            }
         }
     }
 
@@ -73,7 +99,8 @@
 
         ul{
             display: flex;
-            gap:20px;
+            gap:25px;
+            margin-top: 30px;
 
             li:nth-child(1){
                 margin-top:5px;
