@@ -459,6 +459,10 @@ a {
 
 }
 
+#about{
+padding-bottom: 20px;
+}
+
 #about img{
   max-width: 200px;
   max-height: 200px;
@@ -487,6 +491,10 @@ padding: 20px;
   margin-bottom: 20px;
 }
 
+#about article aside{
+  margin-top:20px;
+}
+
 .info .skills-list {
   font-size: 4vw;
 }
@@ -506,11 +514,16 @@ padding: 20px;
 }
 
 main .wraper .container .sentence{
-  font-size: 6vw;
+  font-size: 8vw;
 }
 
 #contact{
   padding: 20px;
+}
+
+main .wraper a{
+  margin-bottom: 20px;
+  padding: 4px 15px;
 }
 
 }
