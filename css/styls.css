@@ -388,7 +388,7 @@ a {
 @media (max-width: 768px) {
  
   main .wraper .container .sentence{
-      font-size: 45px;
+      font-size: 8vw;
   }
 
   #about{
@@ -457,6 +457,49 @@ a {
   right: 20px;
   top: 20px;
 
+}
+
+#about img{
+  max-width: 200px;
+  max-height: 200px;
+}
+
+#about .picture{
+margin: auto;
+}
+
+.background main{
+  background-size: contain;
+}
+
+#about .info p{
+  font-size: 4vw;
+  width: inherit;
+}
+
+#about .info{
+max-width: 479px;
+}
+
+#about .info h2{
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.info .skills-list {
+  font-size: 4vw;
+}
+
+.containerContact .contactH2 {
+  margin: auto;
+  margin-bottom: 30px;
+}
+#contact .containerContact .ContactForm {
+  padding: 0;
+}
+
+main .wraper .container .sentence{
+  font-size: 6vw;
 }
 
 }
