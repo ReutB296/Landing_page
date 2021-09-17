@@ -34,6 +34,17 @@
   transition: background-color 800ms linear;
 }
 
+.navContainer .hamburger {
+  background: url("../pic/hamburger.png");
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: none;
+}
+
 .text-white {
   color: white;
 }
@@ -308,6 +319,7 @@ main .wraper a:hover {
   font-size: 32px;
   letter-spacing: 1px;
   font-weight: 600;
+  width: fit-content;
 }
 .containerContact .contactH2 span {
   color: #f38f67;
@@ -373,4 +385,79 @@ a {
   text-decoration: none;
 }
 
-/*# sourceMappingURL=styls.css.map */
+@media (max-width: 768px) {
+ 
+  main .wraper .container .sentence{
+      font-size: 45px;
+  }
+
+  #about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: initial;
+    padding-top: 40px;
+  }
+
+  #about .picture{
+  width: fit-content;
+  }
+
+  #about article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  #contact .containerContact{
+   width: initial;
+  }
+
+  #contact .containerContact .ContactForm .name{
+    max-width: 550px;
+  }
+
+  #contact .containerContact .ContactForm .message{
+    max-width: 550px;
+  }
+
+  #contact .containerContact .ContactForm .emailAdress,  #contact .containerContact .ContactForm .subject{
+    max-width: 550px;
+  }
+
+  #contact .containerContact .ContactForm{
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .navContainer .ulNav {
+   display: none;
+   flex-direction: column;
+   width: 100%;
+ }
+
+ .navContainer .ulNav.show {
+   display: flex;
+   gap: 10px;
+   align-items: center;
+ }
+
+ .navContainer .ulNav.show .top::before{
+   display: none;
+ }
+
+ .navContainer .hamburger {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+}
+
+}
+ 

@@ -34,7 +34,6 @@
   
 
 
-
 .navContainer ul {
     width: 30%;
      list-style: none;
@@ -42,6 +41,18 @@
      flex-direction: row;
      justify-content: space-evenly;
      transition: background-color 800ms linear;
+ }
+
+ .navContainer .hamburger{
+    background: url('../pic/hamburger.png');
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: none;
+  
  }
 
 
