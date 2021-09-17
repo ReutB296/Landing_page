@@ -35,7 +35,7 @@
 }
 
 .navContainer .hamburger {
-  background: url("../pic/hamburger.png");
+  background: url("../pic/hamburger2.png");
   background-size: cover;
   height: 24px;
   width: 24px;
@@ -479,6 +479,7 @@ margin: auto;
 
 #about .info{
 max-width: 479px;
+padding: 20px;
 }
 
 #about .info h2{
@@ -500,6 +501,10 @@ max-width: 479px;
 
 main .wraper .container .sentence{
   font-size: 6vw;
+}
+
+#contact{
+  padding: 20px;
 }
 
 }
