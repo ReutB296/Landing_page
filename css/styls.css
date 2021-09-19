@@ -383,6 +383,7 @@ main .wraper a:hover {
 
 #work {
   padding-top: 100px;
+  padding-bottom: 200px;
 }
 #work h1 {
   color: #f38f67;
@@ -398,8 +399,7 @@ main .wraper a:hover {
   display: flex;
   gap: 50px;
   justify-content: center;
-  margin-top: 60px;
-  margin-bottom: 250px;
+  padding-top: 200px;
 }
 .portfolio-container .portfolio-hover-title {
   width: 230px;
