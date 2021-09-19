@@ -35,7 +35,7 @@
 }
 
 .navContainer .hamburger {
-  background: url("../pic/hamburger2.png");
+  background: url("../pic/hamburger.png");
   background-size: cover;
   height: 24px;
   width: 24px;
@@ -371,6 +371,73 @@ main .wraper a:hover {
   color: black;
 }
 
+#work .item-2 img, #work .item-1 img {
+  width: 250px;
+  height: 250px;
+}
+
+#work .item-2, #work .item-1 {
+  position: relative;
+  cursor: pointer;
+}
+
+#work {
+  padding-top: 100px;
+}
+#work h1 {
+  color: #f38f67;
+  margin: auto;
+  width: fit-content;
+  margin-top: 40px;
+  font-size: 30px;
+}
+#work h1 span {
+  color: black;
+}
+.portfolio-container {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 250px;
+}
+.portfolio-container .portfolio-hover-title {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  transition: all 0.4s;
+  opacity: 0;
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.87);
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+.portfolio-container .portfolio-hover-title:hover {
+  opacity: 1;
+  transform: scale(0.97);
+}
+
+.portfolio-content {
+  text-align: center;
+}
+.portfolio-content h3 {
+  letter-spacing: 2px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.portfolio-content ul {
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+  text-align: left;
+  margin: 0;
+}
+.portfolio-content ul li {
+  margin-bottom: 2px;
+  font-weight: 400;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   width: 100%;
@@ -385,146 +452,4 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
- 
-  main .wraper .container .sentence{
-      font-size: 8vw;
-  }
-
-  #about{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: initial;
-    padding-top: 40px;
-  }
-
-  #about .picture{
-  width: fit-content;
-  }
-
-  #about article{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
-  }
-
-  #contact .containerContact{
-   width: initial;
-  }
-
-  #contact .containerContact .ContactForm .name{
-    max-width: 550px;
-  }
-
-  #contact .containerContact .ContactForm .message{
-    max-width: 550px;
-  }
-
-  #contact .containerContact .ContactForm .emailAdress,  #contact .containerContact .ContactForm .subject{
-    max-width: 550px;
-  }
-
-  #contact .containerContact .ContactForm{
-  display: flex;
-  flex-direction: column;
-  padding-left: 100px;
-  }
-
-}
-
-@media (max-width: 480px) {
-  .navContainer .ulNav {
-   display: none;
-   flex-direction: column;
-   width: 100%;
- }
-
- .navContainer .ulNav.show {
-   display: flex;
-   gap: 10px;
-   align-items: center;
- }
-
- .navContainer .ulNav.show .top::before{
-   display: none;
- }
-
- .navContainer .hamburger {
-  display: block;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-
-}
-
-#about{
-padding-bottom: 20px;
-}
-
-#about img{
-  max-width: 200px;
-  max-height: 200px;
-}
-
-#about .picture{
-margin: auto;
-}
-
-.background main{
-  background-size: contain;
-}
-
-#about .info p{
-  font-size: 4vw;
-  width: inherit;
-}
-
-#about .info{
-max-width: 479px;
-padding: 20px;
-}
-
-#about .info h2{
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-#about article aside{
-  margin-top:20px;
-}
-
-.info .skills-list {
-  font-size: 4vw;
-}
-
-.containerContact .contactH2 {
-  margin: auto;
-  margin-bottom: 30px;
-}
-#contact .containerContact .ContactForm {
-  padding: 0;
-  row-gap: none;
-}
-
-#contact .containerContact .ContactForm input, #contact .containerContact .ContactForm textarea{
-  margin-bottom: 20px;
-
-}
-
-main .wraper .container .sentence{
-  font-size: 8vw;
-}
-
-#contact{
-  padding: 20px;
-}
-
-main .wraper a{
-  margin-bottom: 20px;
-  padding: 4px 15px;
-}
-
-}
- 
+/*# sourceMappingURL=styls.css.map */
