@@ -587,15 +587,15 @@ padding: 20px;
   margin: auto;
   margin-bottom: 30px;
 }
-#contact .containerContact .ContactForm {
+/* #contact .containerContact .ContactForm {
   padding: 0;
   row-gap: none;
-}
+} */
 
-#contact .containerContact .ContactForm input, #contact .containerContact .ContactForm textarea{
+/* #contact .containerContact .ContactForm input, #contact .containerContact .ContactForm textarea{
   margin-bottom: 20px;
 
-}
+} */
 
 main .wraper .container .sentence{
   font-size: 8vw;
@@ -608,6 +608,40 @@ main .wraper .container .sentence{
 main .wraper a{
   margin-bottom: 20px;
   padding: 4px 15px;
+}
+
+#work .portfolio-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+
+}
+
+#contact{
+  padding: 200px 20px 0 20px;
+}
+
+.containerContact p{
+  font-size: 4vw;
+  width: 90%;
+  padding-left: 0;
+
+}
+
+.containerContact{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin:0;
+
+}
+
+.containerContact .ContactButton {
+  font-size: 4vw;
+  width: inherit;
+  margin-left: 0;
+
 }
 
 }
