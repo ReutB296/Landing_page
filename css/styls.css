@@ -254,6 +254,7 @@ main .wraper a:hover {
   font-size: 18px;
   width: 510px;
   margin: 0;
+  user-select: none;
 }
 .info .skills-list {
   display: grid;
@@ -304,18 +305,18 @@ main .wraper a:hover {
   outline: 0 none;
 }
 
-#contact {
-  height: 60vh;
+#contact{
+height: 60vh;
 }
 
 .containerContact {
   width: 780px;
   height: 300px;
-  margin: 60px auto;
+  margin: 300px auto 100px;
 }
 .containerContact .contactH2 {
   margin-left: 250px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   font-size: 32px;
   letter-spacing: 1px;
   font-weight: 600;
@@ -324,6 +325,17 @@ main .wraper a:hover {
 .containerContact .contactH2 span {
   color: #f38f67;
 }
+
+.containerContact p{
+  text-align: center;
+  width: 500px;
+  padding-left: 120px;
+  line-height: 1.8;
+  user-select: none;
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+
 
 .ContactForm {
   display: grid;
@@ -352,19 +364,20 @@ main .wraper a:hover {
   padding-top: 10px;
 }
 
-.ContactButton {
+.containerContact .ContactButton {
   width: 170px;
   height: 40px;
   color: white;
-  font-size: 15px;
+  font-size: 18px;
   border: 2px solid #f38f67;
   border-radius: 3px;
   cursor: pointer;
   letter-spacing: 1px;
-  user-select: none;
-  font-weight: 600;
   background: #f38f67;
   transition: all 500ms ease;
+  margin-left: 280px;
+  padding: 1.25rem 1.75rem;
+  text-decoration: none;
 }
 .ContactButton:hover {
   background: none;
@@ -417,6 +430,10 @@ main .wraper a:hover {
 .portfolio-container .portfolio-hover-title:hover {
   opacity: 1;
   transform: scale(0.97);
+}
+
+.portfolio-container a{
+  color: black;
 }
 
 .portfolio-content {
