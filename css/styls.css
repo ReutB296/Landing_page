@@ -701,7 +701,7 @@ margin:0;
 
 #work .workAside {
   font-size: 3vw;
-  padding-top: 30px;
+  /* padding-top: 30px; */
   
 }
 
@@ -710,6 +710,33 @@ margin:0;
   padding-bottom: 30px;
 }
 
+#work h1{
+  padding-left: 20px;
+  text-align: center;
+}
+
+#work .item-1, #work .item-2{
+  max-width: 180px;
+  max-height: 180px;
+}
+
+#work .item-1 img, #work .item-2 img{
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-container .portfolio-hover-title{
+  max-width: 160px;
+  max-height: 160px;
+}
+
+.portfolio-content h3{
+  font-size: 15px;
+}
+
+.portfolio-content ul{
+  font-size: 11px;
+}
 
 }
  
